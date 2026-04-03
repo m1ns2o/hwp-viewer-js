@@ -1,0 +1,345 @@
+schema: "paperclip/v1"
+agents:
+  aiplatformengineer:
+    role: "engineer"
+    icon: "atom"
+    capabilities: "Own AI-assisted extraction, classification, and workflow plumbing around the document stack. Build reliable model integrations, evaluation loops, and production-safe tooling."
+    adapter:
+      config:
+        dangerouslyBypassApprovalsAndSandbox: true
+        model: "gpt-5.4"
+      type: "codex_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        maxConcurrentRuns: 1
+  ceo:
+    role: "ceo"
+    adapter:
+      config:
+        dangerouslyBypassApprovalsAndSandbox: true
+        model: "gpt-5.4"
+      type: "codex_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        maxConcurrentRuns: 1
+    permissions:
+      canCreateAgents: true
+  cmo:
+    role: "cmo"
+    icon: "target"
+    capabilities: "Own growth, hiring funnel top-of-funnel execution, messaging, outbound sourcing operations, channel strategy, and recruiting campaign reporting. Translate CEO hiring priorities into measurable sourcing motion and delegated growth tasks."
+    adapter:
+      config:
+        dangerouslyBypassApprovalsAndSandbox: true
+        model: "gpt-5.4"
+      type: "codex_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        maxConcurrentRuns: 1
+  cto:
+    role: "cto"
+    icon: "cpu"
+    capabilities: "Own technical roadmap, architecture, engineering staffing, and execution. Translate CEO priorities into concrete technical plans and delegated tasks."
+    adapter:
+      config:
+        dangerouslyBypassApprovalsAndSandbox: true
+        model: "gpt-5.4"
+      type: "codex_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        maxConcurrentRuns: 1
+  foundingengineer:
+    role: "engineer"
+    icon: "rocket"
+    capabilities: "Own end-to-end product execution across frontend, backend, and infrastructure. Turn CTO plans into working software, de-risk architecture, and move the critical path quickly."
+    adapter:
+      config:
+        dangerouslyBypassApprovalsAndSandbox: true
+        model: "gpt-5.4"
+      type: "codex_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        maxConcurrentRuns: 1
+  qacorpusengineer:
+    role: "qa"
+    icon: "bug"
+    capabilities: "Own automated testing, corpus management, regression detection, and quality gates for document rendering and extraction flows."
+    adapter:
+      config:
+        dangerouslyBypassApprovalsAndSandbox: true
+        model: "gpt-5.4"
+      type: "codex_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        maxConcurrentRuns: 1
+  renderingengineer:
+    role: "engineer"
+    icon: "file-code"
+    capabilities: "Own HWP/HWPX parsing and browser rendering quality. Build document format adapters, viewer fidelity tooling, and rendering-focused benchmarks."
+    adapter:
+      config:
+        dangerouslyBypassApprovalsAndSandbox: true
+        model: "gpt-5.4"
+      type: "codex_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        maxConcurrentRuns: 1
+projects:
+  onboarding:
+    color: "#6366f1"
+    status: "in_progress"
+sidebar:
+  agents:
+    - "ceo"
+    - "cmo"
+    - "cto"
+    - "aiplatformengineer"
+    - "foundingengineer"
+    - "qacorpusengineer"
+    - "renderingengineer"
+  projects:
+    - "onboarding"
+tasks:
+  han-1:
+    identifier: "HAN-1"
+    priority: "medium"
+    status: "done"
+  han-10:
+    identifier: "HAN-10"
+    priority: "high"
+    status: "done"
+  han-11:
+    identifier: "HAN-11"
+    priority: "high"
+    status: "done"
+  han-12:
+    identifier: "HAN-12"
+    priority: "high"
+    status: "done"
+  han-13:
+    identifier: "HAN-13"
+    priority: "high"
+    status: "cancelled"
+  han-14:
+    identifier: "HAN-14"
+    priority: "high"
+    status: "done"
+  han-15:
+    identifier: "HAN-15"
+    priority: "high"
+    status: "done"
+  han-16:
+    identifier: "HAN-16"
+    priority: "medium"
+    status: "done"
+  han-17:
+    identifier: "HAN-17"
+    priority: "high"
+    status: "done"
+  han-18:
+    identifier: "HAN-18"
+    priority: "high"
+    status: "cancelled"
+  han-19:
+    identifier: "HAN-19"
+    priority: "high"
+    status: "backlog"
+  han-2:
+    identifier: "HAN-2"
+    priority: "medium"
+    status: "done"
+  han-20:
+    identifier: "HAN-20"
+    priority: "medium"
+    status: "done"
+  han-21:
+    identifier: "HAN-21"
+    priority: "high"
+    status: "done"
+  han-22:
+    identifier: "HAN-22"
+    priority: "high"
+    status: "done"
+  han-23:
+    identifier: "HAN-23"
+    priority: "medium"
+    status: "done"
+  han-24:
+    identifier: "HAN-24"
+    priority: "high"
+    status: "done"
+  han-25:
+    identifier: "HAN-25"
+    priority: "high"
+    status: "done"
+  han-26:
+    identifier: "HAN-26"
+    priority: "high"
+    status: "done"
+  han-27:
+    identifier: "HAN-27"
+    priority: "high"
+    status: "done"
+  han-28:
+    identifier: "HAN-28"
+    priority: "high"
+    status: "done"
+  han-29:
+    identifier: "HAN-29"
+    priority: "high"
+    status: "cancelled"
+  han-3:
+    identifier: "HAN-3"
+    priority: "high"
+    status: "done"
+  han-30:
+    identifier: "HAN-30"
+    priority: "high"
+    status: "blocked"
+  han-31:
+    identifier: "HAN-31"
+    priority: "medium"
+    status: "done"
+  han-32:
+    identifier: "HAN-32"
+    priority: "high"
+    status: "cancelled"
+  han-33:
+    identifier: "HAN-33"
+    priority: "high"
+    status: "done"
+  han-34:
+    identifier: "HAN-34"
+    priority: "high"
+    status: "done"
+  han-35:
+    assigneeAdapterOverrides:
+      adapterConfig:
+        model: "gpt-5.4"
+        modelReasoningEffort: "xhigh"
+    identifier: "HAN-35"
+    priority: "medium"
+    status: "done"
+  han-36:
+    identifier: "HAN-36"
+    priority: "high"
+    status: "done"
+  han-37:
+    identifier: "HAN-37"
+    priority: "high"
+    status: "in_progress"
+  han-38:
+    identifier: "HAN-38"
+    priority: "high"
+    status: "done"
+  han-39:
+    identifier: "HAN-39"
+    priority: "medium"
+    status: "done"
+  han-4:
+    identifier: "HAN-4"
+    priority: "high"
+    status: "done"
+  han-40:
+    identifier: "HAN-40"
+    priority: "high"
+    status: "done"
+  han-41:
+    identifier: "HAN-41"
+    priority: "high"
+    status: "done"
+  han-42:
+    identifier: "HAN-42"
+    priority: "high"
+    status: "done"
+  han-43:
+    identifier: "HAN-43"
+    priority: "high"
+    status: "done"
+  han-44:
+    identifier: "HAN-44"
+    priority: "high"
+    status: "done"
+  han-45:
+    identifier: "HAN-45"
+    priority: "high"
+    status: "done"
+  han-46:
+    identifier: "HAN-46"
+    priority: "high"
+    status: "done"
+  han-47:
+    identifier: "HAN-47"
+    priority: "high"
+    status: "done"
+  han-48:
+    identifier: "HAN-48"
+    priority: "high"
+    status: "done"
+  han-49:
+    identifier: "HAN-49"
+    priority: "high"
+    status: "done"
+  han-5:
+    identifier: "HAN-5"
+    priority: "high"
+    status: "done"
+  han-50:
+    identifier: "HAN-50"
+    priority: "low"
+    status: "done"
+  han-51:
+    identifier: "HAN-51"
+    priority: "medium"
+    status: "blocked"
+  han-52:
+    identifier: "HAN-52"
+    priority: "high"
+    status: "blocked"
+  han-53:
+    identifier: "HAN-53"
+    priority: "high"
+    status: "done"
+  han-54:
+    identifier: "HAN-54"
+    priority: "medium"
+    status: "done"
+  han-55:
+    identifier: "HAN-55"
+    priority: "high"
+    status: "done"
+  han-56:
+    identifier: "HAN-56"
+    priority: "high"
+    status: "done"
+  han-57:
+    identifier: "HAN-57"
+    priority: "high"
+    status: "backlog"
+  han-58:
+    identifier: "HAN-58"
+    priority: "medium"
+    status: "todo"
+  han-6:
+    identifier: "HAN-6"
+    priority: "high"
+    status: "done"
+  han-7:
+    identifier: "HAN-7"
+    priority: "high"
+    status: "done"
+  han-8:
+    identifier: "HAN-8"
+    priority: "high"
+    status: "done"
+  han-9:
+    identifier: "HAN-9"
+    priority: "high"
+    status: "done"
